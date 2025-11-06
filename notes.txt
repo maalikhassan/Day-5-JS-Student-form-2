@@ -5,6 +5,37 @@
 2)` Name:${txtName} ` //this is better wy to use string concatenation, called String interpolation, better to handle complex strings
 ` Age:${document.getElementById("age").value
 
-//install agent cli 
+use backtick
+
+3)//install agent cli 
 C:\Users\Dell>npm install -g @google/gemini-cli
 
+gemini
+
+4)crwating object -
+
+const customer = {
+    name: txtName,
+    email: txtEmail,
+    phone: txtPhone,
+
+};
+
+ let customerlist=[]
+
+    customerlist.push(customer)
+
+    console.log(customer)
+
+
+5)Sweetalert code -
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+Swal.fire({
+    title: 'Success!',
+    text: 'Your form has been submitted.',
+    icon: 'success',
+    confirmButtonText: 'OK'
+});
+
+6) if string block have to use backtick `` , can t use ""
