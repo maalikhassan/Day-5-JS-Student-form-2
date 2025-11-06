@@ -39,3 +39,10 @@ Swal.fire({
 });
 
 6) if string block have to use backtick `` , can t use ""
+
+7)for arays referce we use const instead of 'let'
+
+8) Browser also has storage , (cookies session, local storage etc..)
+localstorage.setitem(key,value)
+
+9)cant pass object in this manner, so we use JSON.Stringify (object)
