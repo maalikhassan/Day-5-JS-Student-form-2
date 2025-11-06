@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 5 Student form cont..</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="app-header">
+        <div class="app-brand">My Shop</div>
+        <nav class="app-nav">
+            <a class="nav-link" href="index.html">Dashboard</a>
+            <a class="nav-link active" href="customerForm.html">Customers</a>
+            <a class="nav-link" href="itemForm.html">Items</a>
+        </nav>
+    </header>
+
+    <main class="formBox">
+        <div class="card">
+            <h1>Customer Form</h1>
+
+            <label for="txtName">Name</label>
+            <input type="text" id="txtName" placeholder="Full name">
+
+            <label for="txtEmail">Email</label>
+            <input type="email" id="txtEmail" placeholder="name@example.com">
+
+            <label for="txtPhone">Phone</label>
+            <input type="text" id="txtPhone" placeholder="0771234567">
+
+            <button id="btnPrint" type="button" onclick="addCustomer();">Add Customer</button>
+
+            <h2>Added Customers</h2>
+            <table id="customerTable" border="1" style="width: 100%;">
+            </table>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

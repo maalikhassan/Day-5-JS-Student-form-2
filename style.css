@@ -14,19 +14,50 @@ body{
     margin:0;
     min-height:100vh;
     display:flex;
+    flex-direction:column;
     align-items:center;
-    justify-content:center;
+    justify-content:flex-start;
     background: linear-gradient(180deg,var(--bg1), #eef4ff);
     color:#0f172a;
     padding:24px;
 }
 
+.app-header{
+    width:100%;
+    max-width:980px;
+    margin:0 auto 18px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+}
+
+.app-brand{
+    font-weight:700;
+    color:var(--accent);
+    font-size:18px;
+}
+
+.app-nav{ display:flex; gap:10px; align-items:center }
+.nav-link{
+    color:var(--muted);
+    text-decoration:none;
+    padding:8px 12px;
+    border-radius:8px;
+    font-size:14px;
+}
+.nav-link.active{
+    background:linear-gradient(180deg, rgba(37,99,235,0.1), rgba(37,99,235,0.06));
+    color:var(--accent);
+    font-weight:600;
+}
+
 .formBox{
     width:100%;
-    max-width:480px;
+    max-width:720px;
     display:flex;
     justify-content:center;
-    align-items:center;
+    align-items:flex-start;
 }
 
 .card{
@@ -37,6 +68,12 @@ body{
     box-shadow:var(--card-shadow);
     border:1px solid rgba(15,23,42,0.04);
 }
+
+.card h1{ margin-top:0 }
+
+.card table{ border-collapse:collapse; width:100%; margin-top:8px }
+.card table th,
+.card table td{ text-align:left; padding:8px; border-bottom:1px solid rgba(15,23,42,0.04); font-size:14px }
 
 h1{
     margin:0 0 14px 0;
