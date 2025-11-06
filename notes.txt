@@ -1,3 +1,10 @@
-document.querySelector("#submitbtn").addEventListener("click", function() {
+1)document.querySelector("#submitbtn").addEventListener("click", function() {
     alert("Button clicked!");
 }); //querySelector("#submitbtn") is an alternative to getElementById("submitbtn") that can capture both ids and classes
+
+2)` Name:${txtName} ` //this is better wy to use string concatenation, called String interpolation, better to handle complex strings
+` Age:${document.getElementById("age").value
+
+//install agent cli 
+C:\Users\Dell>npm install -g @google/gemini-cli
+

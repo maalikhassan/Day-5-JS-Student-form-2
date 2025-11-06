@@ -1,0 +1,118 @@
+:root{
+    --bg1:#f2f7ff;
+    --bg2:#ffffff;
+    --accent:#2563eb; /* blue */
+    --muted:#6b7280;
+    --card-shadow: 0 6px 20px rgba(37,99,235,0.08);
+    --radius:12px;
+    font-family: Inter, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box}
+
+body{
+    margin:0;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background: linear-gradient(180deg,var(--bg1), #eef4ff);
+    color:#0f172a;
+    padding:24px;
+}
+
+.formBox{
+    width:100%;
+    max-width:480px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.card{
+    width:100%;
+    background: linear-gradient(180deg,var(--bg2), #fbfdff);
+    padding:22px;
+    border-radius:var(--radius);
+    box-shadow:var(--card-shadow);
+    border:1px solid rgba(15,23,42,0.04);
+}
+
+h1{
+    margin:0 0 14px 0;
+    font-size:20px;
+    letter-spacing:0.2px;
+}
+
+h2{
+    margin:18px 0 6px;
+    font-size:16px;
+    color:var(--muted);
+}
+
+label{
+    display:block;
+    margin-top:12px;
+    font-size:13px;
+    color:var(--muted);
+}
+
+input[type="text"],
+input[type="email"]{
+    width:100%;
+    padding:10px 12px;
+    margin-top:6px;
+    border-radius:8px;
+    border:1px solid rgba(15,23,42,0.08);
+    background:transparent;
+    font-size:14px;
+    outline:none;
+    transition:box-shadow .12s, border-color .12s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus{
+    box-shadow:0 4px 12px rgba(37,99,235,0.08);
+    border-color: rgba(37,99,235,0.35);
+}
+
+#btnPrint{
+    display:block;
+    margin:18px 0 6px;
+    background-color:var(--accent);
+    color:#fff;
+    width:100%;
+    height:40px;
+    border-radius:10px;
+    border:none;
+    box-shadow:0 6px 18px rgba(37,99,235,0.12);
+    cursor:pointer;
+    font-weight:600;
+    font-size:14px;
+}
+
+#btnPrint:hover{
+    transform:translateY(-1px);
+    box-shadow:0 10px 22px rgba(37,99,235,0.14);
+}
+
+#printValues{
+    background: #f8fafc;
+    padding:10px;
+    border-radius:8px;
+    border:1px dashed rgba(15,23,42,0.04);
+    color:var(--muted);
+    margin:0;
+    font-size:14px;
+    min-height:36px;
+    display:flex;
+    align-items:center;
+}
+
+/* small screens */
+@media (max-width:420px){
+    .card{ padding:16px }
+    h1{ font-size:18px }
+}
+
+
